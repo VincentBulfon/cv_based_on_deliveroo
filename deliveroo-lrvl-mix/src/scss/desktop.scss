@@ -1,0 +1,331 @@
+@import "var";
+
+@media (min-width: 768px) {
+  //------------------------------header
+  .header {
+    padding-top: 60px;
+  }
+
+  .header_center {
+    padding: 6px calc(50% - 400px);
+  }
+
+  .header_title {
+    display: flex;
+    align-items: center;
+    font-size: 1.6em;
+  }
+
+  #vincent {
+    display: block;
+    padding-left: 8px;
+    padding-top: 2px;
+    width: 200px;
+  }
+
+  #logo_deliveroo {
+    width: 39px;
+    margin-left: 16px;
+  }
+
+  .header_link {
+    display: inline-block;
+    width: 151px;
+    padding: 1em 8px;
+    text-align: center;
+    background-color: $deliv;
+    color: $white;
+    font-weight: 500;
+    border-radius: 2px;
+    font-family: "IBM Plex Sans Medium";
+  }
+
+  .header_link:hover {
+    background-color: $hoverbtn;
+  }
+
+  //------------------------------main
+  //
+  //
+  .section_one_centred,
+  .section_two_centred {
+    width: 768px;
+    margin: 0 auto;
+    padding-right: 44px;
+  }
+
+  .section_one_centred::before {
+    position: absolute;
+    min-height: 498px;
+    width: calc(50% + 15px);
+    left: calc(50% - 15px);
+    top: 0;
+    margin-top: 59px;
+    background-image: url(../assets/webdev-light.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+  }
+
+  .section_one_centred::after {
+    position: absolute;
+    top: 0;
+    transform: rotate3d(0, 0, 1, -3deg);
+    min-height: 600px;
+    width: calc(50% + 15px);
+    left: -15px;
+  }
+
+  .section_one_centred {
+    padding: 66px 0;
+  }
+
+  .section_one_h1 {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    display: block;
+    width: 42.1875%;
+    margin-left: 0;
+  }
+
+  .section_one_link {
+    width: 132px;
+    margin-left: 0;
+  }
+
+  .section_two {
+    position: relative;
+    background-image: url(../assets/doughnut.svg), url(../assets/ramen.svg);
+    background-position: top left, bottom right -60px;
+    background-repeat: no-repeat;
+    padding: 96px 0;
+    min-height: 792px;
+    margin-bottom: 0;
+    display: flex;
+  }
+
+  .section_two::after {
+    display: none;
+  }
+
+  .section_two_centred {
+    position: relative;
+    padding-left: 384px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section_two_centred::before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 344px;
+    height: 600px;
+    left: 0px;
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.2);
+    background-image: url(../assets/website_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .section_two_h2,
+  .section_two_p,
+  .section_two_link {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .section_two_h2 {
+    font-size: 2.5em;
+  }
+
+  .section_two_p {
+    margin-top: 48px;
+  }
+
+  .section_two_link {
+    margin-top: 48px;
+  }
+
+  .section_three {
+    position: relative;
+    padding-bottom: 96px;
+    padding-top: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrapper {
+    max-width: 768px;
+  }
+
+  .section_three_h2 {
+    font-size: 2.5em;
+    margin-left: 0;
+  }
+
+  .section_three_section3Sub {
+    width: 344px;
+    margin-left: 0;
+    margin-right: calc(768px - 344px);
+  }
+
+  .section_three::after {
+    background-color: red;
+    position: relative;
+    min-height: 342px; //384
+    width: 384px;
+    margin: -342px 0 0 384px; //384
+    padding-top: 0px;
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.2);
+    background-image: url(../assets/design.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .section_wrapper,
+  .section_four {
+    background-color: #fcfcfc;
+  }
+
+  .section_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0;
+    background-image: url(../assets/deliveroo.svg);
+    background-repeat: no-repeat;
+    background-position: bottom -70px right -70px;
+  }
+
+  .section_four {
+    max-width: 352px;
+    margin-right: 64px;
+    padding: 0;
+  }
+
+  .section_four_ol_li {
+    margin-top: 40px;
+    font-size: 1.25em;
+  }
+
+  .li_item {
+    width: 272px;
+    line-height: 1.33333em;
+  }
+
+  .section_five {
+    box-sizing: border-box;
+    width: 354px;
+    padding: 1.5em;
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.2);
+    background-color: $white;
+  }
+
+  .section_five_li_link {
+    line-height: 1.5em;
+  }
+
+  .section_five_ol_li {
+    padding-top: 1.5em;
+  }
+
+  .section_six {
+    display: flex;
+    flex-direction: row;
+    min-height: auto;
+  }
+
+  .comment {
+    padding: 64px;
+    width: 55%;
+    margin: 0;
+    flex-shrink: 0; //prevent resize from flexbox
+    max-width: 720px;
+  }
+
+  .section_six::before {
+    width: 47.5%;
+    z-index: -3;
+    min-height: 360px;
+    padding-right: 0;
+    background-image: url(../assets/me.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+  }
+
+  .section_six::after {
+    width: 58%;
+    position: absolute;
+    transform: rotate3d(0, 0, 1, -3deg);
+    left: 43.5%;
+    top: -100px;
+    min-height: 550px;
+    z-index: -1;
+  }
+
+  .section_seven {
+    padding: 80px 16px;
+  }
+
+  .section_seven_p {
+    font-size: 1.125em;
+  }
+
+  .section_seven_link {
+    width: 376px;
+  }
+
+  .form_send {
+    max-width: 132px;
+  }
+
+  .contact_form {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .form_id,
+  .form_text {
+    width: calc(50% - 40px);
+    flex-direction: column;
+  }
+
+  #comment {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  //------------------------------footer
+
+  .flex {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .footer_div {
+    width: 23.92857%;
+  }
+
+  .footer {
+    padding-bottom: 1.5rem;
+  }
+
+  .app__badges {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1097px) {
+  .section_one_centred::before {
+    background-size: cover;
+  }
+}

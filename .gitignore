@@ -1,0 +1,13 @@
+*
+!.gitignore
+!original_website_mobile.png
+!original_website_desktop.jpg
+!deliveroo-lrvl-mix
+!deliveroo-lrvl-mix/src/
+!deliveroo-lrvl-mix/src/js/
+!deliveroo-lrvl-mix/src/js/*
+!deliveroo-lrvl-mix/src/scss
+!deliveroo-lrvl-mix/src/scss/*
+!deliveroo-lrvl-mix/src/send_form.php
+!deliveroo-lrvl-mix/public/
+!deliveroo-lrvl-mix/public/index.html
